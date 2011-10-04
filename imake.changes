@@ -1,0 +1,93 @@
+* Sat Apr 10 2010 Anas Nashif <anas.nashif@intel.com> - 1.0.2
+- Fixed rpmlint errors
+
+* Sat Feb 13 2010 Anas Nashif <anas.nashif@intel.com> - 1.0.2
+- Remove self Provides
+
+* Mon Nov 30 2009 Austin Zhang <austin.zhang@intel.com> 1.0.2
+- Update to latest for fixing [MB8118]
+
+* Sat Dec 20 2008 Arjan van de Ven <arjan@linux.intel.com> 1.0.2
+- Remove stale requires on xorg-x11-proto-devel
+
+* Tue Feb 19 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 1.0.2-6
+- Autorebuild for GCC 4.3
+
+* Tue Aug 21 2007 Adam Jackson <ajax@redhat.com> - 1.0.2-5
+- Rebuild for build id
+
+* Mon Mar 26 2007 Adam Jackson <ajax@redhat.com> 1.0.2-4
+- makedepend 1.0.1
+
+* Tue Jul 18 2006 Than Ngo <than@redhat.com> 1.0.2-3
+- cleanup patch files
+- update source files
+
+* Fri Jul 14 2006 Jesse Keating <jkeating@redhat.com> - 1.0.2-2
+- rebuild
+
+* Wed Jun 21 2006 Mike A. Harris <mharris@redhat.com> 1.0.2-1
+- Update to imake-1.0.2, gccmakedep-1.0.2, xorg-cf-files-1.0.2
+
+* Tue Apr 25 2006 Adam Jackson <ajackson@redhat.com> 1.0.1-4
+- Fix ExtraXawReqs to reflect reality (libXp is unneeded)
+
+* Mon Mar 06 2006 Mike A. Harris <mharris@redhat.com> 1.0.1-3
+- Updated xorg-cf-files-1.0.1-redhat.patch with fix for (#178177)
+
+* Wed Mar 01 2006 Karsten Hopp <karsten@redhat.de> 1.0.1-2
+- Buildrequires: xorg-x11-proto-devel
+
+* Fri Feb 10 2006 Jesse Keating <jkeating@redhat.com> 1.0.1-1.2
+- bump again for double-long bug on ppc(64)
+
+* Tue Feb 07 2006 Jesse Keating <jkeating@redhat.com> 1.0.1-1.1
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* Wed Jan 18 2006 Mike A. Harris <mharris@redhat.com> 1.0.1-1
+- Updated all packages to version 1.0.1 from X11R7.0
+
+* Wed Dec 21 2005 Than Ngo <than@redhat.com> 1.0.0-4
+- final fix for #173593
+
+* Tue Dec 20 2005 Than Ngo <than@redhat.com> 1.0.0-3
+- add correct XAppLoadDir #173593
+- add more macros for fedora
+
+* Mon Dec 19 2005 Than Ngo <than@redhat.com> 1.0.0-2
+- add some macros to fix problem in building of manpages
+
+* Sat Dec 17 2005 Mike A. Harris <mharris@redhat.com> 1.0.0-1
+- Updated all packages to version 1.0.0 from X11R7 RC4
+- Added new lndir, gccmakedep tarballs.  (#173478)
+- Changed manpage dirs from man1x to man1 to match upstream RC4 default.
+- Removed all previous 'misc' patch, as we now pass --with-config-dir to
+  configure to specify the location of the Imake config files.
+- Renamed imake patch to xorg-cf-files-1.0.0-ProjectRoot.patch as it did not
+  patch imake at all.  This should probably be changed to be a custom Red Hat
+  host.def file that is added as a source line instead of randomly patching
+  various files.
+
+* Fri Dec 09 2005 Jesse Keating <jkeating@redhat.com> 0.99.2-5.1
+- rebuilt
+
+* Mon Nov 28 2005 Than Ngo <than@redhat.com> 0.99.2-5
+- add correct ProjectRoot for modular X
+
+* Wed Nov 16 2005 Than Ngo <than@redhat.com> 0.99.2-4 
+- add missing host.conf
+
+* Wed Nov 16 2005 Than Ngo <than@redhat.com> 0.99.2-3
+- fix typo 
+
+* Wed Nov 16 2005 Than Ngo <than@redhat.com> 0.99.2-2
+- fix xmkmf to look config files in /usr/share/X11/config
+  instead /usr/%%{_lib}/X11/config/
+- add host.conf
+
+* Fri Nov 11 2005 Mike A. Harris <mharris@redhat.com> 0.99.2-1
+- Updated to imake-0.99.2, xorg-cf-files-0.99.2, makedepend-0.99.2 from
+  X11R7 RC2.
+
+* Thu Nov 10 2005 Mike A. Harris <mharris@redhat.com> 0.99.1-1
+- Initial build.
